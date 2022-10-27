@@ -1,12 +1,14 @@
-let carTypes: any [] = [1, "Volvo", "BMW"];
-
-let len: number = carTypes.length;
-let carCopy: any [] = [];
-let i : number = 0;
-
-for (i = 0; i < len; i += 1) {
-  carCopy[i] = carTypes[i];
+interface starWarsChar {
+    name ?: string;
+    race : string;
+    age : number;
+    alive: boolean;
 }
 
-console.log(carTypes);
+let starWars: starWarsChar[] = [
+  {name: "Luke", race: "Human", age : 17, alive: true},
+  {race: "Jabba", age : 400, alive : false}
 
+];
+
+console.log(starWars);
