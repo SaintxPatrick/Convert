@@ -4,10 +4,13 @@ var cars = [
     { type: "Mercedes", miles: 10000, status: "broken", drove: true },
 ];
 var goodCars = [];
-for (var i = 0; i < cars.length; i++) {
-    if (cars[i].miles < 20000) {
-        goodCars.push(cars[i]);
+function findCars(cars) {
+    for (var i = 0; i < cars.length; i++) {
+        if (cars[i].miles < 20000) {
+            goodCars.push(cars[i]);
+        }
     }
 }
+findCars(cars);
 console.log(cars);
 console.log(goodCars);

@@ -13,14 +13,19 @@ let cars: carTypes[] = [
 
 let goodCars: carTypes[] = [];
 
-  for(let i: number = 0; i < cars.length; i++)
-  {
-    if(cars[i].miles < 20000)
-    {
-      goodCars.push(cars[i]);
-    }
-  }
+function findCars(cars : carTypes[]){
 
+  for(let i: number = 0; i < cars.length; i++)
+    {
+      if(cars[i].miles < 20000)
+      {
+        goodCars.push(cars[i]);
+      }
+    }
+
+}
+
+findCars(cars);
 
 console.log(cars);
 console.log(goodCars);
