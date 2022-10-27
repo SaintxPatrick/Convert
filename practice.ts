@@ -1,12 +1,12 @@
-let carTypes: any [] = [1, "Volvo", "BMW"];
-
-let len: number = carTypes.length;
-let carCopy: any [] = [];
-let i : number = 0;
-
-for (i = 0; i < len; i += 1) {
-  carCopy[i] = carTypes[i];
+function getKey(k : boolean) {
+  return `a key named ${k}`;
 }
 
-console.log(carTypes);
+let Obj = {
+    id : 5,
+    name: 'North Pole',
+    [getKey(true)] : true,
+};
+
+console.log(Obj);
 

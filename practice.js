@@ -1,8 +1,11 @@
-var carTypes = [1, "Volvo", "BMW"];
-var len = carTypes.length;
-var carCopy = [];
-var i = 0;
-for (i = 0; i < len; i += 1) {
-    carCopy[i] = carTypes[i];
+var _a;
+function getKey(k) {
+    return "a key named ".concat(k);
 }
-console.log(carTypes);
+var Obj = (_a = {
+        id: 5,
+        name: 'North Pole'
+    },
+    _a[getKey(true)] = true,
+    _a);
+console.log(Obj);
