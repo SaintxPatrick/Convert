@@ -1,8 +1,13 @@
-var carTypes = [1, "Volvo", "BMW"];
-var len = carTypes.length;
-var carCopy = [];
-var i = 0;
-for (i = 0; i < len; i += 1) {
-    carCopy[i] = carTypes[i];
+var cars = [
+    { type: "Corolla", miles: 10000, status: "Good", drove: true },
+    { type: "Acura", miles: 30000, status: "Running", drove: false },
+    { type: "Mercedes", miles: 10000, status: "broken", drove: true },
+];
+var goodCars = [];
+for (var i = 0; i < cars.length; i++) {
+    if (cars[i].miles < 20000) {
+        goodCars.push(cars[i]);
+    }
 }
-console.log(carTypes);
+console.log(cars);
+console.log(goodCars);
